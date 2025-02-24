@@ -45,7 +45,7 @@ FLURP operates in three phases.
 ### Method under model updates in form of secret sharing
 
 
-![systemmodel](/static/image/systemmodel.png){width=50%}
+![systemmodel](/static/image/systemmodel.png)
 
 
 **On the client side**, after local training, each client $i$ applies $\mathsf{LinfSample}$ to their update $\boldsymbol{g}_i$, yielding the local update representation (LUR) $\boldsymbol{v}_i$. Subsequently, both $\boldsymbol{g}_i$ and $\boldsymbol{v}_i$ are split into *Arithmetic sharing* and transmitted to the servers. 
@@ -86,41 +86,41 @@ To demonstrate the superior resistance of $\mathsf{LinfSample}$ against Byzantin
 
 - Byzantine resilience
 
-![fig2](\static\image\fig2.png)
+![fig2](/static/image/fig2.png)
 
 - Communication of client uploads for Sharing
 - Overhead of computing shared SED matrix
 
-![tab4](\static\image\tab4.png)
+![tab4](/static/image/tab4.png)
 
 ##### Byzantine Robustness of FLURP
 We evaluate the Byzantine resilience of six baselines and FLURP. Notably, FLURP is the only method that effectively resists Backdoor attacks across all tasks.
 
-![fig3a](\static\image\fig3a.png)
+![fig3a](/static/image/fig3a.png)
 
-![fig3b](\static\image\fig3b.png)
+![fig3b](/static/image/fig3b.png)
 
-![fig3c](\static\image\fig3c.png)
+![fig3c](/static/image/fig3c.png)
 
 ##### Influence of Window Size
 Based on empirical analysis of the experimental results, a window size of $2^{11}$, $2^{12}$, $2^{13}$, or $2^{14}$ is deemed optimal for these million-sized models, striking the best balance between overhead and defense.
 
-![tab5](\static\image\tab5.png)
+![tab5](/static/image/tab5.png)
 
 ##### Impact of Client Data Distribution
 FLURP remains a strong contender, especially when $\alpha$ is high. As $\alpha$ decreases, filtering out malicious clients becomes harder, but FLURP still provides robust defense in most situations.
 
-![fig4](\static\image\fig4.png)
+![fig4](/static/image/fig4.png)
 
 ##### Impact of the Proportion of Malicious Clients
 FLURP effectively mitigates the impact of backdoor attacks, even with a higher proportion of malicious clients, making it a highly effective defense for FL systems.
 
-![tab6](\static\image\tab6.png)
+![tab6](/static/image/tab6.png)
 
 ##### Adaptive Attack against FLURP
 FLURP effectively mitigates Adaptive-FLURP attacks by forcing adversaries to use smaller scaling factors ($\gamma$) to evade detection, resulting in minimal global model deviation and negligible impact on model accuracy (MA). Even under non-IID distributions and increased benign update distances, FLURP maintains robust model performance, demonstrating its reliability against adaptive adversaries.
 
-![fig5](\static\image\fig5.png)
+![fig5](/static/image/fig5.png)
 
 ### Conclusion
 The FLURP framework enhances data security, privacy, and access control in distributed environments by integrating LURs and a privacy-preserving proximity-based defense, effectively countering Byzantine adversaries. It reduces SMPC computational and communication overhead, improving FL robustness and ensuring safer AI data management. 
